@@ -158,6 +158,62 @@ nav ul li a:hover {
     z-index: 1;
     object-fit: cover; /* Ensures the image fits perfectly */
 }
+ /* Education, Certificates, Achievements Shared Styling */
+#education ul,
+#certificates ul,
+#achievements ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#education li,
+#certificates li,
+#achievements li {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 99, 71, 0.2);
+}
+
+#education li:hover,
+#certificates li:hover,
+#achievements li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 99, 71, 0.4);
+}
+
+#education h3 {
+    color: #ff6347;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+
+#education p {
+    color: #ccc;
+    margin: 0;
+    font-size: 1rem;
+}
+
+#certificates li,
+#achievements li {
+    color: #ccc;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Optional: Section headers animation */
+.section h2 {
+    animation: fadeIn 1.5s ease-in-out;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff6347;
+}
 
 .image-overlay {
     position: absolute;
